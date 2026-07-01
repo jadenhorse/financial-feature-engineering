@@ -1,0 +1,120 @@
+{
+  "report_time": "2026-07-01T14:30:00",
+  "summary": {
+    "total_features": 12,
+    "strong_features": 3,
+    "medium_features": 4,
+    "weak_features": 3,
+    "useless_features": 2,
+    "avg_iv": 0.1823,
+    "max_iv": 0.6120,
+    "high_corr_pairs": 1,
+    "stable_features": 10,
+    "unstable_features": 1
+  },
+  "feature_details": [
+    {
+      "name": "tx_amount_std_3m",
+      "iv": 0.612,
+      "iv_strength": "强预测力",
+      "psi": 0.032,
+      "stability": "稳定",
+      "description": "近3月交易金额标准差 — 反映消费波动性"
+    },
+    {
+      "name": "rfm_recency_days",
+      "iv": 0.487,
+      "iv_strength": "强预测力",
+      "psi": 0.045,
+      "stability": "稳定",
+      "description": "最近一次交易距今天数 — 活跃度核心指标"
+    },
+    {
+      "name": "woe_occupation_manager",
+      "iv": 0.351,
+      "iv_strength": "强预测力",
+      "psi": 0.018,
+      "stability": "稳定",
+      "description": "职业为管理岗的WOE编码值"
+    },
+    {
+      "name": "tx_amount_mean_6m",
+      "iv": 0.245,
+      "iv_strength": "中预测力",
+      "psi": 0.067,
+      "stability": "稳定",
+      "description": "近6月交易金额均值"
+    },
+    {
+      "name": "rfm_frequency",
+      "iv": 0.198,
+      "iv_strength": "中预测力",
+      "psi": 0.089,
+      "stability": "稳定",
+      "description": "交易频次 — 客户粘性指标"
+    },
+    {
+      "name": "text_risk_keyword_count",
+      "iv": 0.156,
+      "iv_strength": "中预测力",
+      "psi": 0.112,
+      "stability": "轻微不稳定",
+      "description": "风险关键词命中数"
+    },
+    {
+      "name": "tx_amount_trend_6m",
+      "iv": 0.103,
+      "iv_strength": "中预测力",
+      "psi": 0.055,
+      "stability": "稳定",
+      "description": "近6月交易金额趋势斜率"
+    },
+    {
+      "name": "rfm_monetary_avg",
+      "iv": 0.089,
+      "iv_strength": "弱预测力",
+      "psi": 0.041,
+      "stability": "稳定",
+      "description": "平均交易金额"
+    },
+    {
+      "name": "tx_amount_cv_3m",
+      "iv": 0.056,
+      "iv_strength": "弱预测力",
+      "psi": 0.078,
+      "stability": "稳定",
+      "description": "近3月变异系数"
+    },
+    {
+      "name": "text_char_count",
+      "iv": 0.032,
+      "iv_strength": "弱预测力",
+      "psi": 0.291,
+      "stability": "不稳定",
+      "description": "文本字符数"
+    },
+    {
+      "name": "tx_amount_max_1m",
+      "iv": 0.015,
+      "iv_strength": "无预测力",
+      "psi": 0.023,
+      "stability": "稳定",
+      "description": "近1月最大交易金额"
+    },
+    {
+      "name": "text_funding_keyword_count",
+      "iv": 0.008,
+      "iv_strength": "无预测力",
+      "psi": 0.015,
+      "stability": "稳定",
+      "description": "融资关键词命中数"
+    }
+  ],
+  "high_correlation_pairs": [
+    {
+      "feature_a": "tx_amount_mean_6m",
+      "feature_b": "tx_amount_std_3m",
+      "correlation": 0.82
+    }
+  ]
+}

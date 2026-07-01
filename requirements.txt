@@ -1,0 +1,2 @@
+# No external dependencies required
+# Core feature engineering uses only Python standard library
